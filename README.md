@@ -1,10 +1,8 @@
-![Sky logo](./docs/assets/logo.png)
-
-# QGO Desktop Assessment
+# Karhoo Frontend Developer Assessment
 
 ## Overview
 
-Thanks for your interest a development role on the QGO Desktop team!
+Thanks for your interest in a development role on the Karhoo development team!
 
 We'd like you to complete this short technical test before we bring you in for
 an in person interview. It's a chance to show off your skills and show us how
@@ -25,7 +23,7 @@ If you don't get everything done in 90 mins don't worry, just send across what
 you have with a note about what is left to do. We know your time is precious
 and you don't want to spend all day on a technical test!
 
-Given the time constrain we'd rather you focused on:
+Given the time constraint we'd rather you focused on:
 * Making it work, first and foremost!
 * Unit tests.
 

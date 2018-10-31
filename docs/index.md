@@ -1,14 +1,12 @@
 ---
-title: Q/Go Desktop Technical Assessment
+title: Karhoo Frontend Developer Technical Assessment
 ---
 
-![Sky logo](./assets/logo.png)
-
-# Q/Go Desktop Technical Assessment
+# Karhoo Frontend Developer Technical Assessment
 
 ## Overview
 
-Thanks for your interest a development role on the QGO Desktop team!
+Thanks for your interest in a development role on the Karhoo development team!
 
 We'd like you to complete this short technical test before we bring you in for
 an in person interview. It's a chance to show off your skills and show us how
@@ -23,7 +21,7 @@ features.
 
 ## Download
 
-[Download the Assessment](https://github.com/sky-uk/q-go-assessment/archive/master.zip)
+[Download the Assessment](https://github.com/karhoo/karhoo-frontend-developer-test/archive/master.zip)
 
 ## Details
 
