@@ -4,4 +4,9 @@
 
 .itemsList-ul li {
   padding: 5px;
+  cursor: pointer;
+}
+
+.itemsList-ul li.done {
+  text-decoration: line-through;
 }

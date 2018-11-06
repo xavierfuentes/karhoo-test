@@ -1,8 +1,10 @@
 import { combineReducers } from 'redux'
-import reducer from '../logic/todos'
+import todos from '../logic/todos'
+import visibilityFilter from '../logic/visibilityFilter'
 
 export default function createReducer() {
   return combineReducers({
-    todos: reducer,
+    todos,
+    visibilityFilter
   })
 }

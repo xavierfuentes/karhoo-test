@@ -1,15 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
+import { toggleItem } from '../../logic/todos'
+import { visibilityFilters } from '../../logic/visibilityFilter'
 import './styles.css'
 
-export const ItemsList = ({ items }) => {
+export const ItemsList = ({ items, toggleItem }) => {
   return (
     <div>
       <ul className="itemsList-ul">
         {items.length < 1 && <p id="items-missing">Add some tasks above.</p>}
         {items.map(item => (
-          <li key={item.id}>{item.content}</li>
+          <li key={item.id} onClick={() => toggleItem(item.id)} className={item.done ? 'done' : null}>
+            {item.content}
+          </li>
         ))}
       </ul>
     </div>
@@ -18,10 +22,27 @@ export const ItemsList = ({ items }) => {
 
 ItemsList.propTypes = {
   items: PropTypes.array.isRequired,
+  toggleItem: PropTypes.func.isRequired,
 }
 
-const mapStateToProps = state => {
-  return { items: state.todos.items }
+export const getItems = ({ todos, visibilityFilter }) => {
+  switch (visibilityFilter) {
+    case visibilityFilters.SHOW_DONE:
+      return todos.items.filter(item => item.done)
+    default:
+      return todos.items
+  }
 }
 
-export default connect(mapStateToProps)(ItemsList)
+const mapStateToProps = state => ({
+  items: getItems(state),
+})
+
+const mapDispatchToProps = dispatch => ({
+  toggleItem: id => dispatch(toggleItem(id)),
+})
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(ItemsList)
