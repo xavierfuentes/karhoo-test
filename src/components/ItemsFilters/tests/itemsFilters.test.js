@@ -1,7 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 import { ItemsFilters } from '../index'
-import { visibilityFilters } from '../../../logic/visibilityFilter'
 
 const defaultProps = {
   showAll: jest.fn(),
