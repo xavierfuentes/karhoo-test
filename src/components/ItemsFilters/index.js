@@ -6,7 +6,7 @@ import './styles.css'
 
 export const ItemsFilters = ({ showAll, showOnlyDoneItems }) => {
   return (
-    <div>
+    <div className="itemsFilters-div">
       <button onClick={showAll}>ALL</button>
       <button onClick={showOnlyDoneItems}>DONE</button>
     </div>

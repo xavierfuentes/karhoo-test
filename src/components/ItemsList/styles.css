@@ -1,5 +1,6 @@
 .itemsList-ul {
   list-style-type: none;
+  padding: 0;
 }
 
 .itemsList-ul li {
